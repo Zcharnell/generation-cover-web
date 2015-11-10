@@ -1,0 +1,48 @@
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+@import "utils/mixins";
+@import "utils/resets";
+@import "typography";
+@import "colors";
+
+
+//--------------------------------------------------
+//      [GENERAL STYLES]
+//--------------------------------------------------
+
+
+body{
+    margin:0 auto;
+    background-color:#666;
+    font-size:13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#imageloader{
+    display:none;
+}
+
+#centerCol{
+    margin:0 auto;
+    @include clearfix;
+    background-color:#fff;
+    box-shadow: 0 2px 5px #000;
+    //border: 1px solid #000;
+
+    &.canvas-open{
+        max-width: 2000px;
+    }
+}
+
+//--------------------------------------------------
+//      [DIRECTIVE STYLES]
+//--------------------------------------------------
+@import "directives/catalog";
+
+//--------------------------------------------------
+//      [AREA-SPECIFIC STYLES]
+//--------------------------------------------------
+@import "templates/landing";
+@import "templates/nav";
+@import "templates/kingmaker";
+@import "templates/combat";

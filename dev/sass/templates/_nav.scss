@@ -1,0 +1,45 @@
+#nav{
+	padding:10px 2.5%;
+	position:absolute;
+	top:0;
+	color:#fff;
+	width:95%;
+	z-index:10;
+
+	.container{
+		position:absolute;
+		left:50%;
+
+		.nav-container{
+			position:relative;
+			left:-50%;
+		}
+
+		span{
+			padding:0 10px;
+			text-transform:uppercase;
+			cursor:pointer;
+			transition: color 200ms ease-out;
+
+			&:hover{
+				text-decoration:underline;
+				color:#FF1111;
+			}
+		}
+
+		.divider{
+			padding:0 30px;
+			display:inline;
+		}
+	}
+
+	// .container{
+	// 	&.left{
+	// 		float:left;
+	// 	}
+
+	// 	&.right{
+	// 		float:right;
+	// 	}
+	// }
+}

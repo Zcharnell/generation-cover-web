@@ -1,0 +1,88 @@
+.kingmaker{
+    padding:10px;
+    @include clearfix;
+
+    .header{
+    	background-color:$colorBranding4;
+    	padding:10px;
+    	text-align:center;
+    }
+
+    .title{
+    	color:#fff;
+    	font-size:18px;
+    	font-weight:bold;
+    }
+
+    .army-list{
+    	float:left;	
+	    width:55%;
+	    background-color:$colorOffwhite;
+	    padding:10px;
+	    @include clearfix;
+    }
+
+    .checkout-units{
+    	float:right;
+    	background-color:$colorOffwhite;
+    	padding:10px;
+    	width:35%;
+
+    	.gold{
+	    	padding: 15px 30px;
+	    	margin-bottom:30px;
+	    }
+
+	    .max-cost{	
+	    	float:left;
+	    }
+
+	    .army-cost{
+	    	float:right;
+	    }
+
+	    .over-limit{
+	    	color:$colorBranding1;
+	    }
+
+	    .units{
+	    	list-style:none;
+	    	padding: 0 20px;
+
+	    	.class-gold-cost{
+	    		float:right;
+	    	}
+
+	    	.icon{
+	    		float:right;
+	    		color:$colorBase;
+	    		cursor:pointer;
+	    		padding:2px;
+	    	}
+
+	    	.list-title{
+	    		background-color:$colorBranding3;
+	    		color:#fff;
+	    		padding:5px 10px;
+	    	}
+
+	    	li{
+	    		padding:5px 10px;
+	    		border-bottom:1px solid #fff;
+	    	}
+	    }
+    }
+
+    .checkout{
+    	margin:50px 0 15px;
+    	text-align:center;
+    }
+
+    .checkout-button{
+    	background-color:$colorBranding5;
+    	color:#fff;
+    	padding:10px 100px;
+    	border-radius:5px;
+    	cursor:pointer;
+    }
+}
