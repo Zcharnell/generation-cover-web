@@ -1,1 +1,92 @@
-<!DOCTYPE html> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Generation Cover</title> <meta name="keywords" content=""> <meta name="description" content=""> <meta name="viewport" content="width=device-width,initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="css/gcover.css">  <body> <div id="imageloader"> <img src="assets/images/gencov1-glow6.jpg" width="1px" height="1px"> <img src="assets/images/events2.jpg" width="1px" height="1px"> <img src="assets/images/gencov6-media.jpg" width="1px" height="1px"> <img src="assets/images/gencov2-facebook.jpg" width="1px" height="1px"> <img src="assets/images/gencov13-contact.jpg" width="1px" height="1px"> <img src="assets/images/gencov5-crop2.jpg" width="1px" height="1px"> </div> <div id="ng-app" role="main" ng-app="GenCov" ng-controller="GenCovController as main"> <div id="gencov"> <div ui-view="header" id="header"></div> <div ui-view="centerCol" id="centerCol"></div> </div> </div> <script src="js/vendor.js"></script> <!-- jquery --> <!-- <script src="../jquery/jquery-1.11.1.min.js"></script> --> <script src="js/prefsgui.js"></script>  
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>Generation Cover</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/gcover.css" />
+
+</head>
+
+<body>
+
+<div id="imageloader">
+	<img src="assets/images/gencov1-glow6.jpg" width="1px" height="1px"></img>
+	<img src="assets/images/events2.jpg" width="1px" height="1px"></img>
+	<img src="assets/images/gencov6-media.jpg" width="1px" height="1px"></img>
+	<img src="assets/images/gencov2-facebook.jpg" width="1px" height="1px"></img>
+	<img src="assets/images/gencov13-contact.jpg" width="1px" height="1px"></img>
+	<img src="assets/images/gencov5-crop2.jpg" width="1px" height="1px"></img>
+</div>
+<div id="ng-app" role="main" ng-app="GenCov" ng-controller="GenCovController as main">
+	<div id="gencov">
+		<div ui-view="header" id="header"></div>
+		<div ui-view="centerCol" id="centerCol"></div>
+	</div>
+</div>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.js"></script>
+<!-- endbower -->
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../node_modules/angular-resource/angular-resource.js"></script>
+<!-- endbuild -->
+
+<!-- jquery -->
+<!-- <script src="../jquery/jquery-1.11.1.min.js"></script> -->
+
+<!-- build:js js/prefsgui.js -->
+
+<!-- controllers -->
+<script src="js/main.js"></script>
+<script src="js/services/GenCovService.js"></script>
+<script src="js/controllers/LandingCtrl.js"></script>
+<script src="js/controllers/NavCtrl.js"></script>
+<script src="js/directives/Catalog.js"></script>
+<!-- <script src="js/services/KomAppStartGame.js"></script> -->
+<!-- <script src="js/controllers/KingmakerCtrl.js"></script> -->
+<!-- <script src="js/controllers/CombatCtrl.js"></script> -->
+<!-- directives -->
+<!-- <script src="js/directives/listUnitsData.js"></script>
+<script src="js/directives/listUnit.js"></script> -->
+
+
+
+
+
+
+
+<!--
+<script src="js/utils/filters.js"></script>
+<script src="js/utils/PrefsGuiConfig.js"></script>
+<script src="js/controllers/HeaderCtrl.js"></script>
+<script src="js/controllers/ErrorCtrl.js"></script>
+<script src="js/controllers/MinorErrorCtrl.js"></script>
+<script src="js/controllers/ProgramsListCtrl.js"></script>
+<script src="js/controllers/ProgramsDetailsCtrl.js"></script>
+<script src="js/controllers/ContactsListCtrl.js"></script>
+<script src="js/controllers/ContactsDetailsCtrl.js"></script>
+<script src="js/controllers/NewContactCtrl.js"></script>
+<script src="js/controllers/EditContactCtrl.js"></script>
+<script src="js/directives/switcher.js"></script>
+<script src="js/directives/radioIcons.js"></script>
+<script src="js/directives/timepicker.js"></script>
+<script src="js/directives/flyout.js"></script>
+<script src="js/services/PrefsGuiContacts.js"></script>
+<script src="js/services/PrefsGuiErrors.js"></script>
+<script src="js/services/PrefsGuiService.js"></script>
+<script src="js/services/PrefsGuiTranslations.js"></script>
+<script src="js/constants/ChannelsConst.js"></script>
+-->
+<!-- endbuild -->
+
+</body>
+</html>
