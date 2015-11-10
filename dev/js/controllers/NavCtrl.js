@@ -1,7 +1,7 @@
 function NavCtrl(GenCovService) {
 	//this.programs = PrefsGuiService.programs();
 	//PrefsGuiService.stateChangeToLastProgram();
-	console.log("NavCtrl");
+	// console.log("NavCtrl");
 }
 NavCtrl.$inject = ['GenCovService'];
 

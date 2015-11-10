@@ -213,13 +213,13 @@ module.exports = function (grunt) {
         src: '*/**/*.html',
         dest: '.tmp/templates.js',
         options: {
-          module:'PrefsGui',
+          module:'GenCov',
           htmlmin: {
             collapseWhitespace: true,
             collapseBooleanAttributes: true,
             removeCommentsFromCDATA: true
           },
-          usemin: 'js/prefsgui.js'
+          usemin: 'js/gencov.js'
         }
       }
     },
@@ -259,7 +259,7 @@ module.exports = function (grunt) {
     mavenDist : {
       options : {
         deliverables : ['**', '!**/bower_components/**', '!**/node_modules/**', '!**/Gruntfile.js', '!**/package.json', '!**/bower.json', '!**/test/**', '!**/dev/**', '!*.txt'],
-        warName : 'PrefsGui'
+        warName : 'GenCov'
       },
       deploy : {}
     }

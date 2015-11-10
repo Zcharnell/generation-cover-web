@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "main": "server.js",
   "dependencies": {
+    "express": "~4.12.x",
+    "body-parser": ">0.0.0",
+    "errorhandler": ">0.0.0",
+    "method-override": ">0.0.0",
+    "aws-sdk": "*",
     "grunt": "^0.4.1",
     "grunt-cli": "~0.1.6"
   },
