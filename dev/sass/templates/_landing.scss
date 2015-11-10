@@ -173,4 +173,31 @@
 		}
 	}
 
+	#social-section{
+		height:250px;
+		background-color:#000;
+		
+		.social{
+			width:33.3%;
+			float:left;
+			height:100%;
+			display:block;
+		}
+
+		.facebook{
+			background: #000000 url("../assets/images/gencov2-facebook.jpg") no-repeat center center;
+			background-size:100% auto;
+		}
+
+		.contact{
+			background: #000000 url("../assets/images/gencov13-contact.jpg") no-repeat center center;
+			background-size:100% auto;
+		}
+
+		.media{
+			background: #000000 url("../assets/images/gencov6-media.jpg") no-repeat center center;
+			background-size:100% auto;
+		}
+	}
+
 }

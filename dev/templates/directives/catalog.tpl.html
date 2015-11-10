@@ -1,8 +1,10 @@
 <div id="catalog">
     <ul>
         <li ng-repeat="song in list">
-            <span class="song-title">{{song.title}}</span>
-            <span class="song-artist">{{song.artist}}</span>
+            <div class="song-container">
+                <div class="song-title">{{song.title}}</div>
+                <div class="song-artist">{{song.artist}}</div>
+            </div>
         </li>
     </ul>
 </div>
