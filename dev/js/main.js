@@ -126,16 +126,7 @@ function config($stateProvider, $urlRouterProvider) {
 config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 function GenCovController($scope, GenCovService, $rootScope) {
-	this.canvasOpen = false;
-
-	var that = this;
-	$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){ 
-	    if(toState.name === 'combat'){
-	    	that.canvasOpen = true;
-	    } else {
-	    	that.canvasOpen = false;
-	    }
-	});
+	
 }
 GenCovController.$inject = ['$scope', 'GenCovService', '$rootScope'];
 
