@@ -38,9 +38,9 @@ body{
 //      [DIRECTIVE STYLES]
 //--------------------------------------------------
 @import "directives/catalog";
+@import "directives/navigation";
 
 //--------------------------------------------------
 //      [AREA-SPECIFIC STYLES]
 //--------------------------------------------------
 @import "templates/landing";
-@import "templates/nav";

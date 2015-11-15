@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="nav-container">
 			<span>Home</span>
-			<span>Events</span>
-			<span>About</span>
+			<span ng-click="scrollToId('events-section')">Events</span>
+			<span ng-click="scrollToId('about-section')">About</span>
 			<div class="divider"></div>
-			<span>Catalog</span>
-			<span>Social</span>
-			<span>Store</span>	
+			<span ng-click="scrollToId('songs-section')">Catalog</span>
+			<span ng-click="scrollToId('social-section')">Social</span>
+			<span ng-click="goToExternalSite('https://www.facebook.com/Generationcover/photos_stream')">Media</span>	
 		</div>
 	</div>
 	<!-- <div class="container left">
